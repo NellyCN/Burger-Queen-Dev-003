@@ -1,4 +1,6 @@
 import prueba from '../styles/prueba.module.css'
+import Link from 'next/link'
+
 
 export default function Prueba() {
   return (
@@ -10,18 +12,11 @@ export default function Prueba() {
 
       <main >
         <div>
-          <>
-            <header>
-              <h1 className={prueba.title}>Burger Queen</h1>
-            </header>
-            <nav className='links'>
-              <a href=""> Administrador</a>
-              <a href=""> Administrador</a>
-              <a href=""> Administrador</a>
-            </nav>
-          </>
-
-          <h1>Ir a <a href='/'>Home </a> </h1>
+          <header>
+            <h1 className={prueba.title}>Es una prueba xoxo</h1>
+          </header>
+          <p>prueba componente </p>
+          <h1><Link href="/" > Ir al Home </Link> </h1>
         </div>
 
       </main>

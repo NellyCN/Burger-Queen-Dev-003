@@ -1,9 +1,10 @@
+import menu from '../styles/menu.module.css'
 
-
+//usar Link de next
 export default function MenuVistas() {
     return (
-        <div>
-            <nav classname="links-navegacion">
+        <div className={menu.containerLinks}>
+            <nav classname="linksnavegacion">
                 <ul>
                     <li>
                         <a href="http://localhost:3000/"> Administrador</a>
