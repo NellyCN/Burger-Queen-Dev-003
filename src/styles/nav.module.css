@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Montserrat:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.containerHeader{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.titulomenu {
+    color: rgb(255, 255, 255);
+    font-family: 'Patua One', cursive;
+    letter-spacing: 2px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+.imagenheader {
+    border-radius: 80%;
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.containerHeader {
+    background-color: #592418;
+}
