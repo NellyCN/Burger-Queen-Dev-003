@@ -6,6 +6,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    background-color: #592418;
 }
 .titulomenu {
     color: rgb(255, 255, 255);
@@ -19,10 +20,5 @@
     width: 100px;
     height: auto;
     margin-top: 15px;
-    margin-bottom: 15px;
     margin-left: 20px;
-}
-
-.containerHeader {
-    background-color: #592418;
 }
