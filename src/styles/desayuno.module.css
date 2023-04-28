@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Patua+One&display=swap');
+
+.containerMenu {
+    max-width: 300px;
+    max-height: 300px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;/*  borde de 1px de ancho y color negro */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+    margin: 10px 0px 0px 10px; /* superior e izquierdo*/
+    padding-bottom: 20px;
+}
+
+.btnproducto,
+.btnproducto1,
+.btnproducto2
+ {
+    background-color: brown;
+    width: 6rem;
+    height: 6rem;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+
+}
+.btnproducto1{
+    background-image: url("../images/BtnAmericano.png");
+}
+.btnproducto2{
+    background-image: url("../images/Btnpan.png")
+    
+}
+/* .btnproducto1:hover {
+
+    background: #51be36;
+    color: white;
+
+} */
+.btnproducto1:active,
+.btnproducto2:active
+{
+    transform: translateY(3px);
+    box-shadow: 2px 2px;
+
+}
+/* .btnproducto1:hover{
+ transform: translateY(-0.33em);
+} */
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-family: 'Hind', sans-serif;
+    align-self: center;
+    color: #592418;
+    font-size: 20px;
+}

@@ -37,7 +37,9 @@
     background-position: center;
     width: 30px;
     height: 30px;
-    align-self: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
 .logout:hover{
     border-bottom: 2px solid;
