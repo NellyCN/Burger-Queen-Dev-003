@@ -1,4 +1,5 @@
 import desayuno from '../styles/desayuno.module.css'
+
 export default function MenuDesayuno() {
   return (
     <div className={desayuno.containerMenu}>
