@@ -1,44 +1,39 @@
-import TakeOrder from "../styles/toma.pedido.resumen.module.css";
-import Nav from './nav'
-import MenuVistas from './menuvistas'
+import takeorder from "../styles/takeorder.module.css";
 
-//usar Link de next
 export default function TakeOrders() {
   return (
     <>
-    <Nav></Nav>
-    <MenuVistas></MenuVistas>
-    <div className={TakeOrder.containerOrders}>
-      <div classname="containerOrdersHeader">
+    <div className={takeorder.containerOrders}>
+      <div className="containerOrdersHeader">
        <p>PEDIDO Nº </p>
         <p>Mesero :</p>
         <p>Cliente :</p>
         <p>Hora Pedido:</p>
         <p>-----------------------------------------------------</p>
       </div>
-      <div classname="containerDetailOrders">aqui va el detalle del pedido</div>
+      <div className="containerDetailOrders">aqui va el detalle del pedido</div>
 
-      <div classname="containerResumeOrders">
-          <div className={TakeOrder.lineResumeOrders}>
+      <div className="containerResumeOrders">
+          <div className={takeorder.lineResumeOrders}>
             <p>-----------------------------------------------------</p>
           </div>
-          <div classname={TakeOrder.containerResumeOrder}>
-              <div className={TakeOrder.labelResumeOrders}>
+          <div className={takeorder.containerResumeOrder}>
+              <div className={takeorder.labelResumeOrders}>
                 <p>Sub-Total </p>
                 <p>IGV</p>
                 <p>Total Pedido</p>
               </div>
-              <div className={TakeOrder.dataLabelResumeOrders}>
+              <div className={takeorder.dataLabelResumeOrders}>
                 <p>1</p>
                 <p>2</p>
                 <p>3</p>
               </div>
           </div>
       </div>
-      <div classname="containerButtonsOrders">
+      <div className="containerButtonsOrders">
 
-            <button classname={TakeOrder.cancelOrder}>Cancelar Pedido</button>
-            <button classname={TakeOrder.sendOrder}>Enviar Pedido a Cocina</button>
+            <button className={takeorder.cancelOrder}>Cancelar Pedido</button>
+            <button className={takeorder.sendOrder}>Enviar Pedido a Cocina</button>
     
       </div>
     </div>

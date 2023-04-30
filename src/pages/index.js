@@ -17,13 +17,13 @@ export default function Home() {
 
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <h1><Link href="/prueba" > Ir a componente de prueba </Link> </h1>
-          <h1><Link href="/linksnavegacion" > Ir a prueba Menu vistas</Link> </h1>
-          <h1><Link href="/vistameseros" > Ir a prueba Menu vista mesero</Link> </h1>
+          <h1><Link href="/vistameseros" > Ir a Menu vista mesero</Link> </h1>
         </div>
 
       </main>
-      <footer>  A Project Built with Next.js  </footer>
+      <footer> 
+      <p>Copyright © 2023 Natalia Aspee & Nelly Cumpa</p>
+      <p> A Project Built with Next.js </p> </footer>
     </>
   )
 }
