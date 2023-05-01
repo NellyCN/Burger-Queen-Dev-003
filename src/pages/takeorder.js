@@ -34,9 +34,9 @@ export default function TakeOrders() {
 
             <button className={takeorder.cancelOrder}>Cancelar Pedido</button>
             <button className={takeorder.sendOrder}>Enviar Pedido a Cocina</button>
-    
+     </div>
       </div>
-    <Footer></Footer>
+
     </>
   );
 }

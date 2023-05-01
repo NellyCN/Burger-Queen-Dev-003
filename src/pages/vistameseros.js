@@ -14,7 +14,7 @@ export default function VistaMesero() {
                 <MenuDesayuno></MenuDesayuno>
                 <TakeOrders></TakeOrders>
             </div>
-            <h1>Aqui va lo que pueden ver los meseros hu2</h1>
+            {/* <h1>Aqui va lo que pueden ver los meseros hu2</h1> */}
             <Foot></Foot>
 
 
