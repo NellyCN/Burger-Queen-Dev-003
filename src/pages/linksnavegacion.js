@@ -14,11 +14,11 @@ export default function Linksnavegacion() {
                         <a className={menu.links} href="http://localhost:3000/">Mesero</a>
                     </li>
                     <li className={menu.lista}>
-                      <Link href="/vistacocina" className={menu.links} > Cocina </Link>
+                        <Link href="/vistacocina" className={menu.links} > Cocina </Link>
                     </li>
                 </ul>
             </nav>
-            <button className={menu.logout} > </button>
+            <button className={menu.logout} > Log Out </button>
         </div>
     )
 }
