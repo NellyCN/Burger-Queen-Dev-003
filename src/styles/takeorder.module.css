@@ -23,12 +23,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-/* .containerDetailOrders{ /* NO */
-    /* background-color: rgb(211, 120, 120); */
-/*} */
-.resumeOrders{
-    background-color: #D62300;
-}
+
 .lineResumeOrders{  /*ok*/
     border-bottom-style: dashed;
 }
