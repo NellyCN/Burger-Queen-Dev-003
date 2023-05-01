@@ -6,6 +6,7 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 import Nav from './nav'
 import MenuVistas from './menuvistas'
+import Footers from './footer'
 
 export default function Home() {
   return (
@@ -20,12 +21,11 @@ export default function Home() {
       <MenuVistas></MenuVistas>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <h1><Link href="/prueba" > Ir a componente de prueba </Link> </h1>
+            <h1><Link href="/takeorder" > Ir a Vista Mesero </Link> </h1>
           <h1><Link href="/menuvistas" > Ir a prueba Menu vistas</Link> </h1>
         </div>
-
       </main>
-      <footer>  A Project Built with Next.js  </footer>
+      <Footers></Footers>
     </>
   )
 }

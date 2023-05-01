@@ -7,13 +7,12 @@
     height: 160px;
     background: #FEFBF2;
     border-color: #592418;
-    float: right;
-    font-family: 'Hind';
+    /* float:unset;     */
+    font-family: 'Hind';    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 
 .button1 { /* OK */
     background: #ffff;
@@ -41,4 +40,13 @@
     color: #ffff;
     border-color: #ffff;
     
+}
+
+.copy {
+    margin-top: 30px;
+    line-height: 1;
+    color: #592418;
+    align-items: center;
+
+    justify-content: center;
 }

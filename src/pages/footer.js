@@ -1,4 +1,5 @@
 import Footer from "../styles/footer.module.css";
+import Link from "next/link";
 
 export default function Foot() {
   return (
@@ -6,7 +7,7 @@ export default function Foot() {
       <div className={Footer.containerButtons}>
         <div>
           <button className={Footer.button1}>Clientes</button>
-          {/* <Link href="/menuvistas" className={Footer.button1}>Revisar Estado de Pedidos</Link> */}
+          <Link href="/menuvistas" className={Footer.button1}>Revisar Estado de Pedidos</Link>
         </div>
         <div className={Footer.copy}>
             <p>Copyright © 2023 Natalia Aspee & Nelly Cumpa</p>

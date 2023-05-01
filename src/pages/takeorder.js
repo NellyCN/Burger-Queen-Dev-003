@@ -1,47 +1,45 @@
-import TakeOrder from "../styles/toma.pedido.resumen.module.css";
-import Nav from './nav'
-import MenuVistas from './menuvistas'
+import TakeOrder from "../styles/take.order.module.css";
+import Nav from "./nav";
+import MenuVistas from "./menuvistas";
+import Link from "next/link";
+import Footer from "./footer";
 
 //usar Link de next
 export default function TakeOrders() {
   return (
     <>
-    <Nav></Nav>
-    <MenuVistas></MenuVistas>
-    <div className={TakeOrder.containerOrders}>
-      <div classname="containerOrdersHeader">
-       <p>PEDIDO Nº </p>
-        <p>Mesero :</p>
-        <p>Cliente :</p>
-        <p>Hora Pedido:</p>
-        <p>-----------------------------------------------------</p>
-      </div>
-      <div classname="containerDetailOrders">aqui va el detalle del pedido</div>
+      <Nav></Nav>
+      <MenuVistas></MenuVistas>
+      <div className={TakeOrder.containerOrders}>
+        <div classname="containerOrdersHeader">
+          <p>PEDIDO Nº </p>
+          <p>Mesero :</p>
+          <p>Cliente :</p>
+          <p>Hora Pedido:</p>
+        </div>
+        <div classname={TakeOrder.containerDetailOrders}>
+          aqui va el detalle del pedido
+        </div>
 
-      <div classname="containerResumeOrders">
-          <div className={TakeOrder.lineResumeOrders}>
-            <p>-----------------------------------------------------</p>
+        <div classname={TakeOrder.resumeOrders}>
+          <div className={TakeOrder.lineResumeOrders}></div>
+          <div className={TakeOrder.labelResumeOrders}>
+            <p>Sub-Total </p>
+            <p>IGV</p>
+            <p>Total Pedido</p>
           </div>
-          <div classname={TakeOrder.containerResumeOrder}>
-              <div className={TakeOrder.labelResumeOrders}>
-                <p>Sub-Total </p>
-                <p>IGV</p>
-                <p>Total Pedido</p>
-              </div>
-              <div className={TakeOrder.dataLabelResumeOrders}>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-              </div>
+          <div className={TakeOrder.dataLabelResumeOrders}>
+            <p>$ 0.00</p>
+            <p>$ 0.00</p>
+            <p className={TakeOrder.totalprice}>$ 0,000.00</p>
           </div>
+        </div>
+        <div>
+          <button className={TakeOrder.button1}>Cancelar Pedido</button>
+          <Link href="/menuvistas" className={TakeOrder.button}>Enviar Pedido a Cocina</Link>
+        </div>
       </div>
-      <div classname="containerButtonsOrders">
-
-            <button classname={TakeOrder.cancelOrder}>Cancelar Pedido</button>
-            <button classname={TakeOrder.sendOrder}>Enviar Pedido a Cocina</button>
-    
-      </div>
-    </div>
+    <Footer></Footer>
     </>
   );
 }
