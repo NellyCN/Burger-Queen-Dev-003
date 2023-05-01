@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Patua+One&display=swap');
+
+.containerLinks {
+    display: flex;
+    background-color: #592418;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    /* padding: 1%; */
+}
+
+/* color: rgb(255, 255, 255); */
+.linksnavegacion {
+    font-family: 'Hind', sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 0px 20px;
+}
+
+.lista {
+    color: rgb(252, 252, 252);
+    display: inline-block;
+    padding-right: 6.25rem;
+}
+
+.links {
+    text-decoration: none;
+    margin-left: 0.625rem;
+}
+
+.links:hover 
+{
+    border-bottom: 1px solid;
+    background: #E5876E;
+}
+
+.logout {
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    width: 3.75rem;
+    height: 1.563rem;
+    margin-right: 3.125rem;
+
+}
+
+.logout:hover {
+    border-bottom: 5px solid;
+}

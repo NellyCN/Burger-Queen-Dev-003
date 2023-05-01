@@ -1,6 +1,6 @@
 import Image
     from "next/image"
-import nav from '../styles/nav.module.css'
+import nav from '../styles/header.module.css'
 
 export default function Nav() {
     return (
