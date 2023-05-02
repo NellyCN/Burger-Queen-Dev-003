@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border-style: outset;
     /*  borde de 1px de ancho y color negro */
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
     margin: 10px 0px 0px 10px;
     /* superior e izquierdo*/
     padding-bottom: 0.625rem;

@@ -42,9 +42,12 @@
     width: 3.75rem;
     height: 1.563rem;
     margin-right: 3.125rem;
+    border-radius: 3px;
+    border: none;
 
 }
 
 .logout:hover {
-    border-bottom: 5px solid;
+    border-bottom: 1px solid;
+    background: #E5876E;
 }

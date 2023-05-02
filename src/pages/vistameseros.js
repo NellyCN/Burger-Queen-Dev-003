@@ -1,8 +1,7 @@
 import Foot from "./footer"
 import Nav from "./header"
 import Linksnavegacion from "./linksnavegacion"
-import MenuAlmuerzo from "./menualmuerzo"
-import MenuDesayuno from "./menudesayuno"
+import MenuGeneral from "./menugeneral"
 import TakeOrders from "./takeorder"
 //dar estilo a esta hoja para mostrar componentes lado a lado?
 export default function VistaMesero() {
@@ -13,8 +12,7 @@ export default function VistaMesero() {
             {/* o  inline block? */}
             <div style={{ display: 'flex' }} className="body2Container"> 
                 <div style={{ display: 'flex' }} className="body1Container">
-                    <MenuDesayuno></MenuDesayuno>
-                    <MenuAlmuerzo></MenuAlmuerzo>
+                    <MenuGeneral></MenuGeneral>
                 </div>
                 <TakeOrders></TakeOrders>
             </div>
