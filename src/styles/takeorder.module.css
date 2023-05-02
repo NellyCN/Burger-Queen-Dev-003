@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Patua+One&display=swap');
+.root {
+    --foreground-rgb: 89, 36, 24; /* Se define color en primer plano header/text */
+    --background-start-rgb: 245, 235, 220;  /* Se define color para el background */
+    --background-end-rgb: 242, 254, 245;  /* Se define color para las secciones */
+    --textcolor-header-rgb: 255, 255, 255;  /* Se define color de texto en header y background de buttons */
+    --textcolor-header-order-rgb: 0, 0, 0;  /* Se define color de texto en header y background de buttons */
+    --background-button1-orders-rgb: 229, 135, 110;  /* Se define color de background1 para boton1 en toma de pedidos */
+    --background-button2-orders-rgb: 214, 35, 0;  /* Se define color de background2 para boton2 en toma de pedidos */
+    --background-buttons-products-rgb: 238, 119, 0;  /* Se define color de background2 para boton2 en toma de pedidos */
+    
+}
+.containerOrders {
+    margin: 23px 23px 10px 20px;
+    padding: 20px;
+    width: 502px;
+    height: 760px;
+    background: #FEFBF2;
+    border-color: #592418;
+    float: right;
+    font-family: 'Hind';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lineResumeOrders{  /*ok*/
+    border-bottom-style: dashed;
+}
+.labelResumeOrders {    /*ok*/
+    padding:  15px 0px 15px 15px;
+    margin-left: 100px;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.dataLabelResumeOrders {    /*ok*/
+    color: #592418;
+    padding: 15px 0px 15px 15px;
+    float: right;
+    width: 140px;
+    margin-right: 62px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 22px;
+}
+.totalprice{    /*ok*/
+    border-top-style: solid ;
+}
+.button1 { /* OK */
+    background: #E5876E;
+    color: #592418;
+    width: 200px;
+    height: 62px;
+    margin: 90px 0 20px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1;
+    border-style: ridge;
+    border-color: #ffff;
+    border-radius: 5px;
+    border-width: 4px;
+    align-self: flex-end;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 4px 4px;
+    cursor: pointer;
+
+}
+
+.button1:hover { 
+    background: #ffff;
+    border-color: #D62300;
+    color: #D62300;
+    font-weight: bold;
+}
+
+.button { /* OK */
+    background: #D62300;
+    color: #ffff;
+    width: 200px;
+    height: 62px;
+    margin: 90px 0 20px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1;
+    border-style: ridge;
+    border-color: #ffff;
+    border-radius: 5px;
+    border-width: 4px;
+    align-self: flex-end;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 4px 4px;
+    cursor: pointer;
+    float: left;
+}
+
+.button:hover { 
+    background: #ffff;
+    border-color: #D62300;
+    color: #D62300;
+    font-weight: bold;
+}
