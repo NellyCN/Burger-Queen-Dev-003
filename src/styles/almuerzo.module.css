@@ -15,6 +15,7 @@
     padding-bottom: 0.625rem;
     overflow: auto;
     /* para no desbordar el contenedor */
+    
 }
 
 .btnproducto,
@@ -33,7 +34,7 @@
     display: block;
 
 }
-
+/* 
 .btnagregarproducto{
     font-size: 13px;
     font-family: 'Hind', sans-serif;
@@ -45,7 +46,7 @@
     color: rgb(255, 255, 255);
 
 
-}
+} */
 
 .titleproducto:active {
     transform: translateY(3px);
@@ -53,12 +54,12 @@
 
 }
 
-.divproducto {
+/* .divproducto {
     background: #592418;
     align-items: center;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .btnproducto1 {
     background-image: url("../images/BtnAmericano.png");

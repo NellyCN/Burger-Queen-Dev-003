@@ -13,10 +13,10 @@ export default function TakeOrders() {
         </div>
         <div className={TakeOrder.lineResumeOrders}></div>
         <div className={TakeOrder.containerDetailOrders}>
-          Precio     Cantidad     Total
+          <p>Precio Cantidad Total</p>
         </div>
+        <div className={TakeOrder.lineResumeOrders}></div>
         <div className={TakeOrder.resumeOrders}>
-          <div className={TakeOrder.lineResumeOrders}></div>
           <div className={TakeOrder.labelResumeOrders}>
             <p>Sub-Total </p>
             <p>IGV</p>
@@ -28,9 +28,11 @@ export default function TakeOrders() {
             <p className={TakeOrder.totalprice}>$ 0,000.00</p>
           </div>
         </div>
-        <div>
+        <div className={TakeOrder.buttonsContainer}>
           <button className={TakeOrder.button1}>Cancelar Pedido</button>
-          <Link href="/vistacocina" className={TakeOrder.button}>Enviar Pedido a Cocina</Link>
+          <Link href="/vistacocina" className={TakeOrder.button}>
+            Enviar Pedido a Cocina
+          </Link>
         </div>
       </div>
     </>
