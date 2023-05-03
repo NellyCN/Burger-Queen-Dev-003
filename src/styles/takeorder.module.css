@@ -11,12 +11,13 @@
     
 }
 .containerOrders {
-    margin: 23px 23px 10px 20px;
+    margin: 15px 15px 8px 15px;
     padding: 20px;
     width: 502px;
     height: 760px;
     background: #FEFBF2;
     border-color: #592418;
+    border-width: 3px;
     float: right;
     font-family: 'Hind';
     display: flex;
@@ -24,8 +25,19 @@
     justify-content: space-between;
 }
 
-.lineResumeOrders{  /*ok*/
+.containerOrdersHeader {
+    font-weight: bold;
+    font-size: 20px;
+}
+.lineResumeOrders {  /*ok*/
     border-bottom-style: dashed;
+}
+.containerDetailOrders {
+    font-weight: bold;
+    font-size: 18px;
+    height: 500px;
+    text-align: right;
+    margin: 5px 64px
 }
 .labelResumeOrders {    /*ok*/
     padding:  15px 0px 15px 15px;
@@ -33,7 +45,7 @@
     float: left;
     text-align: right;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .dataLabelResumeOrders {    /*ok*/
@@ -44,7 +56,7 @@
     margin-right: 62px;
     text-align: right;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 .totalprice{    /*ok*/
     border-top-style: solid ;
@@ -57,7 +69,7 @@
     margin: 90px 0 20px;
     padding: 5px 5px;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     border-style: ridge;
     border-color: #ffff;
@@ -85,7 +97,7 @@
     margin: 90px 0 20px;
     padding: 5px 5px;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     border-style: ridge;
     border-color: #ffff;

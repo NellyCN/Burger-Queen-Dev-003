@@ -6,7 +6,7 @@ export default function Foot() {
     <>
       <div className={Footer.containerButtons}>
         <div>
-          <button className={Footer.button1}>Clientes</button>
+          {/* <button className={Footer.button1}>Clientes</button> */}
           <Link href="/vistacocina" className={Footer.button1}>Revisar Estado de Pedidos</Link>
         </div>
         <div className={Footer.copy}>

@@ -5,14 +5,15 @@ export default function TakeOrders() {
   return (
     <>
       <div className={TakeOrder.containerOrders}>
-        <div className="containerOrdersHeader">
+        <div className={TakeOrder.containerOrdersHeader}>
           <p>PEDIDO Nº </p>
           <p>Mesero :</p>
           <p>Cliente :</p>
           <p>Hora Pedido:</p>
         </div>
+        <div className={TakeOrder.lineResumeOrders}></div>
         <div className={TakeOrder.containerDetailOrders}>
-          aqui va el detalle del pedido
+          Precio     Cantidad     Total
         </div>
         <div className={TakeOrder.resumeOrders}>
           <div className={TakeOrder.lineResumeOrders}></div>
