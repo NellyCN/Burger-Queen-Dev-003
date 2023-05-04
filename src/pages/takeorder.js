@@ -6,9 +6,25 @@ export default function TakeOrders() {
     <>
       <div className={TakeOrder.containerOrders}>
         <div className={TakeOrder.containerOrdersHeader}>
-          <p>PEDIDO Nº </p>
-          <p>Mesero :</p>
-          <p>Cliente :</p>
+          <label htmlFor="mesero" className={TakeOrder.optMesero}>Mesero:</label>
+          <select className={TakeOrder.optturno} name="meseros">
+            <option value="Mesero 1"> 1</option>
+            <option value="Mesero 2"> 2</option>
+            <option value="Mesero 3"> 3</option>
+          </select>
+          <input className={TakeOrder.optMesero}
+            type="text"
+            required=""
+            autoComplete="off"
+            placeholder="Ingresa N° de mesa"
+          />
+          <input className={TakeOrder.optMesero}
+            type="text"
+            required=""
+            autoComplete="off"
+            placeholder="Ingresa nombre del cliente"
+          />
+
           <p>Hora Pedido:</p>
         </div>
         <div className={TakeOrder.lineResumeOrders}></div>
