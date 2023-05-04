@@ -11,12 +11,14 @@
     
 }
 .containerOrders {
-    margin: 23px 23px 10px 20px;
+    margin: 15px 15px 8px 15px;
     padding: 20px;
-    width: 502px;
+    width: 50%;
     height: 760px;
     background: #FEFBF2;
+    border-style: solid;
     border-color: #592418;
+    border-width: 1px;
     float: right;
     font-family: 'Hind';
     display: flex;
@@ -24,40 +26,64 @@
     justify-content: space-between;
 }
 
-.lineResumeOrders{  /*ok*/
+.containerOrdersHeader {
+    font-weight: bold;
+    font-size: 20px;
+}
+.lineResumeOrders {  /*ok*/
     border-bottom-style: dashed;
 }
+.containerDetailOrders {
+    font-weight: bold;
+    font-size: 18px;
+    height: 500px;
+    text-align: right;
+    margin: 5px 20px
+}
+
+.resumeOrders {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end
+}
+
 .labelResumeOrders {    /*ok*/
     padding:  15px 0px 15px 15px;
-    margin-left: 100px;
+    margin-left: 10%;
     float: left;
     text-align: right;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .dataLabelResumeOrders {    /*ok*/
     color: #592418;
     padding: 15px 0px 15px 15px;
     float: right;
-    width: 140px;
-    margin-right: 62px;
+    width: 120px;
+    margin-right: 20px;
     text-align: right;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 .totalprice{    /*ok*/
     border-top-style: solid ;
 }
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .button1 { /* OK */
     background: #E5876E;
     color: #592418;
     width: 200px;
     height: 62px;
-    margin: 90px 0 20px;
     padding: 5px 5px;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     border-style: ridge;
     border-color: #ffff;
@@ -82,10 +108,9 @@
     color: #ffff;
     width: 200px;
     height: 62px;
-    margin: 90px 0 20px;
     padding: 5px 5px;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     border-style: ridge;
     border-color: #ffff;
@@ -96,6 +121,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1px 4px 4px;
     cursor: pointer;
     float: left;
+
 }
 
 .button:hover { 

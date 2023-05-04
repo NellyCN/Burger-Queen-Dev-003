@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Patua+One&display=swap');
 
 .containerButtons {
-    margin: 10px 23px 23px 23px;
+    margin: 7px 15px 15px 15px;
     padding: 20px;
     width: 100%;
     height: 160px;
     background: #FEFBF2;
     border-color: #592418;
-    float: right;
-    font-family: 'Hind';
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-around;
+    border-style: solid;
+    border-color: #592418;
+    border-width: 1px;
 }
 
+.buttonsFooterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
 
 .button1 { /* OK */
     background: #ffff;
     color: #D62300;
     width: 203px;
     height: 62px;
-    margin: ;
     padding: 5px 5px;
     text-align: center;
     font-size: 22px;

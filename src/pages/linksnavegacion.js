@@ -8,10 +8,10 @@ export default function Linksnavegacion() {
             <nav className={menu.linksnavegacion}>
                 <ul>
                     <li className={menu.lista}>
-                        <a className={menu.links} href="http://localhost:3000/"> Administrador</a>
+                        <Link href="/vistaadministrador" className={menu.links} > Administrador </Link>
                     </li>
                     <li className={menu.lista}>
-                        <a className={menu.links} href="http://localhost:3000/">Mesero</a>
+                        <Link href="/vistameseros" className={menu.links} >Mesero </Link>
                     </li>
                     <li className={menu.lista}>
                         <Link href="/vistacocina" className={menu.links} > Cocina </Link>

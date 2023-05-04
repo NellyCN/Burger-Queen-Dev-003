@@ -14,7 +14,7 @@ export default function MenuAlmuerzo() {
       <div className={Almuerzo.containerBtn}>
         <div className={Almuerzo.divproducto}>
           <button className={Almuerzo.btnproducto1} />
-          <button className={Almuerzo.btnagregarproducto}>Agregar producto</button>
+          {/* <button className={Almuerzo.btnagregarproducto}>Agregar producto</button> */}
         </div>
         <button className={Almuerzo.btnproducto2} />
         <button className={Almuerzo.btnproducto3} />
