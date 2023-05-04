@@ -61,20 +61,11 @@
     flex-direction: column;
 } */
 
-.btnproducto1 {
-    background-image: url("../images/BtnAmericano.png");
-}
+.imageProd {
+    width: 6rem;
+    height: 6rem;
+    margin: 0.625rem;
 
-.btnproducto2 {
-    background-image: url("../images/Btnpan.png")
-}
-
-.btnproducto3 {
-    background-image: url("../images/Btnagua5.png");
-}
-
-.btnproducto4 {
-    background-image: url("../images/Btnagua7.png");
 }
 
 /* .btnproducto1:hover {

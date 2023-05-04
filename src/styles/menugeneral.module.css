@@ -1,0 +1,33 @@
+.containerMenu {
+    max-width: 21rem;
+    max-height: 21rem;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-style: outset;
+    /*  borde de 1px de ancho y color negro */
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    margin: 10px 0px 0px 10px;
+    /* superior e izquierdo*/
+    padding-bottom: 0.625rem;
+    align-items: center;
+    overflow: auto;
+    /* para no desbordar el contenedor */
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Hind', sans-serif;
+    align-self: center;
+    color: #592418;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.titlecontainer {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}

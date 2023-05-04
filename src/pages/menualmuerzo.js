@@ -8,26 +8,20 @@ import Almuerzo from '../styles/almuerzo.module.css'
 // "type":
 // "dateEntry":
 function hello() {
-  console.log("Click yo"); 
+  console.log("Click yo");
 }
 
 
 export default function MenuAlmuerzo(props) {
   return (
-    <div className={Almuerzo.containerMenu}>
-      <h2 className={Almuerzo.title}>Almuerzo</h2>
-      <div className={Almuerzo.containerBtn}>
-        <div className={Almuerzo.divproducto} onClick={hello}>
-          <p>{props.name}</p>
-          <img src = {props.imageProd}/>
-          <p>{props.price}</p>
-
-          {/* <button className={Almuerzo.btnproducto1} /> */}
-          {/* <button className={Almuerzo.btnagregarproducto}>Agregar producto</button> */}
-        </div>
-        {/* <button className={Almuerzo.btnproducto2} />
-        <button className={Almuerzo.btnproducto3} />
-        <button className={Almuerzo.btnproducto4} /> */}
+    <div>
+      {/* className={Almuerzo.containerMenu} */}
+      {/* <div className={Almuerzo.divproducto} onClick={hello}>        </div> */}
+      <div className={Almuerzo.btnproducto}>
+        <img src={props.imageProd} className={Almuerzo.imageProd} alt='imagen producto de comida' />
+        <p>{props.name}</p>
+        <p>{props.price}</p>
+        <p>{props.type}</p>
       </div>
     </div>
   )
