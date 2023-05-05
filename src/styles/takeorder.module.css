@@ -93,9 +93,23 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.15) 1px 4px 4px;
     cursor: pointer;
-
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
 }
-
+.optMesero{
+    font-family: 'Hind', sans-serif;
+    font-family: 1.25rem;
+    width: 20rem;
+    height: 2rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+.optturno{
+    height: 2rem;
+    width: 2rem;
+    font-family: 'Hind', sans-serif;
+    
+}
 .button1:hover { 
     background: #ffff;
     border-color: #D62300;
@@ -121,7 +135,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1px 4px 4px;
     cursor: pointer;
     float: left;
-
+    font-family: 'Hind', sans-serif;
 }
 
 .button:hover { 
