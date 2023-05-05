@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Patua+One&display=swap');
 
-.btnproducto {
-    background-color: brown;
+.containerproducto {
+    background: #EE7700;
     width: 8rem;
-    height: 10rem;
+    height: 9rem;
     margin: 0.625rem;
     text-align: center;
     font-family: 'Hind', sans-serif;
@@ -12,9 +12,10 @@
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    margin: 0 8px;
     flex-direction: column;
-
+    font-size: 10px;
+    overflow: auto;
+    justify-content: flex-end;
 }
 
 .btnagregarproducto {
@@ -26,15 +27,8 @@
     width: 100%;
     height: 1.875rem;
     color: rgb(255, 255, 255);
+    margin-top: auto;
 
-
-}
-
-.divproducto {
-    background: #592418;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .imageProd {
@@ -42,26 +36,7 @@
     height: 4rem;
     margin-bottom: 1px;
 }
-
-/* .btnproducto1:hover {
-
-    background: #51be36;
-    color: white;
-
-} */
-.btnproducto1:active,
-.btnproducto2:active,
-.btnproducto3:active,
-.btnproducto4:active {
-    transform: translateY(3px);
-    box-shadow: 2px 2px;
-
-}
-
-/* .btnproducto1:hover{
- transform: translateY(-0.33em);
-} */
-
+    
 .containerBtn {
     display: flex;
     justify-content: center;

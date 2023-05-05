@@ -14,14 +14,14 @@ function hello() {
 
 export default function MenuAlmuerzo(props) {
   return (
-    <div>
-      {/* className={Almuerzo.containerMenu} */}
+    <div key={props.id}>
+      {/* se agrega id para evitar errores con keys*/}
       {/* <div className={Almuerzo.divproducto} onClick={hello}>        </div> */}
-      <div className={Almuerzo.btnproducto}>
+      <div className={Almuerzo.containerproducto}>
         <img src={props.imageProd} className={Almuerzo.imageProd} alt='imagen producto de comida' />
         <p>{props.name}</p>
         <p>{props.price}</p>
-        <p>{props.type}</p>
+        <button className={Almuerzo.btnagregarproducto}>Agregar producto</button>
       </div>
     </div>
   )

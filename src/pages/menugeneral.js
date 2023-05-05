@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import MenuDesayuno from "./menudesayuno";
 
-const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hZGFAZ21haWwuY29tIiwiaWF0IjoxNjgzMjQyMzIyLCJleHAiOjE2ODMyNDU5MjIsInN1YiI6IjMifQ.eUdwLZ7vkel2OXdS6EKej8-7oIP7JE9SIKsIOvHkXSg";
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hZGFAZ21haWwuY29tIiwiaWF0IjoxNjgzMjQ3NDI3LCJleHAiOjE2ODMyNTEwMjcsInN1YiI6IjMifQ.Th6kbLmTde_T3MMnnVmVL0swiwmqc-lZ5g_l-BVyi3g";
 export default function MenuGeneral() {
   const [dataProducts, setdataProducts] = useState([])
   useEffect(() => {
@@ -20,45 +20,43 @@ export default function MenuGeneral() {
       })
   })
   return (
-    <div>
+    <div>        
+      <h2 className={menugeneral.title}>Desayuno</h2>
       <div className={menugeneral.containerMenu}>
-        <h2 className={menugeneral.title}>Desayuno</h2>
+
         {
           dataProducts
             .filter(item => item.type === "Desayuno")
             .map(item => {
               return (
-                <>
-                  <MenuDesayuno
-                    key={item.id}
-                    name={item.name}
-                    price={item.price}
-                    imageProd={item.image}
-                    type={item.type}
-                  />
-                </>
+                <MenuDesayuno
+                  key={item.id}
+                  name={item.name}
+                  price={item.price}
+                  imageProd={item.image}
+                  type={item.type}
+                />
+
 
               )
             })
         }
-      </div>
+      </div>        
+      <h2 className={menugeneral.title}>Almuerzo</h2>
       <section className={menugeneral.containerMenu}>
-        <h2 className={menugeneral.title}>Almuerzo</h2>
+
         {
           dataProducts
             .filter(item => item.type === "Almuerzo")
             .map(item => {
               return (
-                <>
-                  <MenuAlmuerzo
-                    key={item.id}
-                    name={item.name}
-                    price={item.price}
-                    imageProd={item.image}
-                    type={item.type}
-                  />
-                </>
-
+                <MenuAlmuerzo
+                  key={item.id}
+                  name={item.name}
+                  price={item.price}
+                  imageProd={item.image}
+                  type={item.type}
+                />
               )
             })
         }
