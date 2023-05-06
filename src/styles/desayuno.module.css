@@ -2,7 +2,7 @@
 
 .containerproducto {
     background: #EE7700;
-    width: 8rem;
+    width: 9rem;
     height: 9rem;
     margin: 0.625rem;
     text-align: center;
@@ -36,9 +36,9 @@
     height: 4rem;
     margin-bottom: 1px;
 }
-    
+/*     
 .containerBtn {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+} */

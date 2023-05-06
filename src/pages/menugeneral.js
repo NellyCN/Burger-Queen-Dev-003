@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import MenuDesayuno from "./menudesayuno";
 
-const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hZGFAZ21haWwuY29tIiwiaWF0IjoxNjgzMjQ3NDI3LCJleHAiOjE2ODMyNTEwMjcsInN1YiI6IjMifQ.Th6kbLmTde_T3MMnnVmVL0swiwmqc-lZ5g_l-BVyi3g";
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hZGFAZ21haWwuY29tIiwiaWF0IjoxNjgzMzMyNjc5LCJleHAiOjE2ODMzMzYyNzksInN1YiI6IjMifQ.1r4uIACLKq-C5ts_ZXd_2QcHXsXkDnedMA-rl-7xzNI";
 export default function MenuGeneral() {
   const [dataProducts, setdataProducts] = useState([])
   useEffect(() => {
