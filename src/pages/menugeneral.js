@@ -1,66 +1,61 @@
-import menugeneral from "../styles/menugeneral.module.css"
-import MenuAlmuerzo from "./menualmuerzo"
-import { useState, useEffect } from "react"
-import axios from "axios"
+import menugeneral from "../styles/menugeneral.module.css";
+import MenuAlmuerzo from "./menualmuerzo";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import MenuDesayuno from "./menudesayuno";
 
-const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hZGFAZ21haWwuY29tIiwiaWF0IjoxNjgzMjQ3NDI3LCJleHAiOjE2ODMyNTEwMjcsInN1YiI6IjMifQ.Th6kbLmTde_T3MMnnVmVL0swiwmqc-lZ5g_l-BVyi3g";
+const token =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5qYW5ldGN1bXBhQGdtYWlsLmNvbSIsImlhdCI6MTY4MzMzOTg3MCwiZXhwIjoxNjgzMzQzNDcwLCJzdWIiOiIzIn0.-dzkidvhWWh0cUmc7oF5VtfC8ghqn0wPEbMr6y-rMFI";
 export default function MenuGeneral() {
-  const [dataProducts, setdataProducts] = useState([])
+  const [dataProducts, setdataProducts] = useState([]);
+    // console.log(dataProducts);
+  // Usamos useEffect para actualizar
+  // Se lanza despues del primer renderizado, luego se cargan los elementos
   useEffect(() => {
     axios({
       method: "GET",
       url: "http://localhost:8080/products",
       headers: {
-        Authorization: `Bearer ${token}`
-      }
-    })
-      .then(Response => {
-        setdataProducts(Response.data)
-      })
-  })
+        Authorization: `Bearer ${token}`,
+      },
+    }).then((Response) => {
+      setdataProducts(Response.data);
+    });
+  }, []);   // Si le pongo una dependencia a UseEffect, se va a volver a lanzar useEffect
   return (
-    <div>        
+    <div>
       <h2 className={menugeneral.title}>Desayuno</h2>
       <div className={menugeneral.containerMenu}>
-
-        {
-          dataProducts
-            .filter(item => item.type === "Desayuno")
-            .map(item => {
-              return (
-                <MenuDesayuno
-                  key={item.id}
-                  name={item.name}
-                  price={item.price}
-                  imageProd={item.image}
-                  type={item.type}
-                />
-
-
-              )
-            })
-        }
-      </div>        
+        {dataProducts
+          .filter((item) => item.type === "Desayuno")
+          .map((item) => {
+            return (
+              <MenuDesayuno
+                key={item.id}
+                name={item.name}
+                price={item.price}
+                imageProd={item.image}
+                type={item.type}
+              />
+            );
+          })}
+      </div>
       <h2 className={menugeneral.title}>Almuerzo</h2>
       <section className={menugeneral.containerMenu}>
-
-        {
-          dataProducts
-            .filter(item => item.type === "Almuerzo")
-            .map(item => {
-              return (
-                <MenuAlmuerzo
-                  key={item.id}
-                  name={item.name}
-                  price={item.price}
-                  imageProd={item.image}
-                  type={item.type}
-                />
-              )
-            })
-        }
+        {dataProducts
+          .filter((item) => item.type === "Almuerzo")
+          .map((item) => {
+            return (
+              <MenuAlmuerzo
+                key={item.id}
+                name={item.name}
+                price={item.price}
+                imageProd={item.image}
+                type={item.type}
+              />
+            );
+          })}
       </section>
     </div>
-  )
+  );
 }

@@ -29,18 +29,39 @@
 .containerOrdersHeader {
     font-weight: bold;
     font-size: 20px;
+    height: 100px;
 }
 .lineResumeOrders {  /*ok*/
+    margin-top: 2px;
     border-bottom-style: dashed;
 }
 .containerDetailOrders {
     font-weight: bold;
     font-size: 18px;
-    height: 500px;
-    text-align: right;
-    margin: 5px 20px
+    /* height: 500px; */
+    /* text-align: right; */
+    column-gap: 10px;
+    margin: 5px 20px;
+    grid-template-columns: 100px 70px 100px;
+  /* grid-template-rows: 80px auto 80px;  */
+ 
+  /* row-gap: 15px; */
+  border-width: 1px;
+  border-color: #592418;
+  border-style: solid;
 }
 
+.detailProductscontainer{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+}
+/* .detailProductscontainer p{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end
+} */
 .resumeOrders {
     display: flex;
     flex-direction: row;
