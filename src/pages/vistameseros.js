@@ -3,6 +3,9 @@ import Nav from "./header"
 import Linksnavegacion from "./linksnavegacion"
 import MenuGeneral from "./menugeneral"
 import TakeOrders from "./takeorder"
+
+
+
 //dar estilo a esta hoja para mostrar componentes lado a lado?
 export default function VistaMesero() {
     return (

@@ -7,9 +7,9 @@ import MenuDesayuno from "./menudesayuno";
 const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5qYW5ldGN1bXBhQGdtYWlsLmNvbSIsImlhdCI6MTY4MzMzOTg3MCwiZXhwIjoxNjgzMzQzNDcwLCJzdWIiOiIzIn0.-dzkidvhWWh0cUmc7oF5VtfC8ghqn0wPEbMr6y-rMFI";
 export default function MenuGeneral() {
-  const [dataProducts, setdataProducts] = useState([]);
+  const [dataProducts, setdataProducts] = useState([]); // useState: permite agregar una variable de estado a su componente
     // console.log(dataProducts);
-  // Usamos useEffect para actualizar
+  // Usamos useEffect para sincronizar la Api con axios. Se llama en el nivel superior del componente
   // Se lanza despues del primer renderizado, luego se cargan los elementos
   useEffect(() => {
     axios({

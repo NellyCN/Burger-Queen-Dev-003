@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import OrderByProduct from "./orderByProduct";
+import MessageButtons from "./buttonOrder";
 // import { useContext } from "react";
 // import { PropTypes } from "prop";
 // import TotalContext '../';
@@ -12,7 +13,7 @@ export default function TakeOrders() {
 
   let arrayOrders = []; //
   let obj1 = {
-    name: "Café Americano",
+    name: "Café ",
     price: 350.0,
     quantityProduct: 2,
     subTotalProduct: 700.0,
@@ -89,10 +90,6 @@ export default function TakeOrders() {
             );
           })
         }
-        {
-
-
-        }
 
 
         <div className={TakeOrder.lineResumeOrders}></div>
@@ -108,12 +105,7 @@ export default function TakeOrders() {
             <p className={TakeOrder.totalprice}>$ 0,000.00</p>
           </div>
         </div>
-        <div className={TakeOrder.buttonsContainer}>
-          <button className={TakeOrder.button1}>Cancelar Pedido</button>
-          <Link href="/vistacocina" className={TakeOrder.button}>
-            Enviar Pedido a Cocina
-          </Link>
-        </div>
+        <MessageButtons/>
       </div>
     </>
   );
