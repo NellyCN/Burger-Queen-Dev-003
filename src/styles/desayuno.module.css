@@ -45,3 +45,22 @@
     justify-content: center;
     flex-wrap: wrap;
 } */
+
+@media (min-width: 535px) and (max-width: 1045px){
+    .containerproducto{
+        background: #EE7700;
+        width: 230px;
+        height: 14rem;
+        margin: 0.725rem;
+        font-family: 'Hind', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        overflow: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: column;
+        align-items: center;
+    }
+    }

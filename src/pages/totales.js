@@ -13,9 +13,10 @@ export default function TotalPedido(props) {
     //     return subTotal;
         
     // }, 0);
-    let TotalOrder = 2000
-    let igvTotalOrder = TotalOrder/1.18;
-    let sumSubTotalOrder = TotalOrder - igvTotalOrder;
+    let TotalOrder = 1700
+    let sumSubTotalOrder = (TotalOrder/1.18);
+    let igvTotalOrder = TotalOrder - sumSubTotalOrder;
+    
     // subTotal.map(obj);
     // useEffect(() => {
     //     setSubTotal(subTotal);

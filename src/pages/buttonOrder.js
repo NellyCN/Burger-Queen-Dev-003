@@ -21,7 +21,7 @@ function ButtonsOrders({ sendToCook, cancelOrder }) {
       <Link href="/vistacocina"  className={TakeOrder.button} onClick={sendToCook}>
         Enviar Pedido a Cocina
       </Link>
-      <Button className={TakeOrder.button} onClick={cancelOrder}>
+      <Button className={TakeOrder.cancelBbutton} onClick={cancelOrder} >
         Cancelar Pedido
       </Button>
     </div>

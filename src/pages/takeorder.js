@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import OrderByProduct from "./orderByProduct";
 import MessageButtons from "./buttonOrder";
-import TotalPedido from "@/styles/totales";
+import TotalPedido from "./totales";
 
 export default function TakeOrders(prop) {
   const [dataOrders, setdataOrders] = useState([]);
@@ -78,15 +78,10 @@ export default function TakeOrders(prop) {
         <section className={TakeOrder.resumeOrders}>
           <div className={TakeOrder.labelResumeOrders}>
             <p>Sub-Total </p>
-            <p>IGV</p>
+            <p>Impuestos(18%)</p>
             <p>Total Pedido</p>
           </div>
           <TotalPedido />
-          {/* <div className={TakeOrder.dataLabelResumeOrders}>
-            <p>$ 0.00</p>
-            <p>$ 0.00</p>
-            <p className={TakeOrder.totalprice}>$ 0,000.00</p>
-          </div> */}
         </section>
         <MessageButtons />
       </main>
