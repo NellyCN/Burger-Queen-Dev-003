@@ -2,43 +2,46 @@
 
 .containerproducto {
     background: #EE7700;
-    width: 8rem;
-    height: 9rem;
-    margin: 0.625rem;
-    text-align: center;
+    width: 230px;
+    height: 14rem;
+    margin: 0.725rem;
     font-family: 'Hind', sans-serif;
-    align-self: center;
     color: rgb(255, 255, 255);
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 10px;
+    font-size: 14px;
     overflow: auto;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.etiqProd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btnagregarproducto {
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Hind', sans-serif;
     align-items: center;
     background: #592418;
     margin-bottom: 5px;
     width: 100%;
-    height: 1.875rem;
+    height: 2.5rem;
     color: rgb(255, 255, 255);
     margin-top: auto;
 
 }
 
 .imageProd {
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 1px;
+    width: 6rem;
+    height: 6rem;
+    margin: 1px;
 }
-    
+/*     
 .containerBtn {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+} */

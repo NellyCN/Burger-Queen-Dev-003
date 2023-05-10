@@ -23,9 +23,9 @@ export default function MenuGeneral() {
     });
   }, []);   // Si le pongo una dependencia a UseEffect, se va a volver a lanzar useEffect
   return (
-    <div>
+    <div >
       <h2 className={menugeneral.title}>Desayuno</h2>
-      <div className={menugeneral.containerMenu}>
+      <section className={menugeneral.containerMenu}>
         {dataProducts
           .filter((item) => item.type === "Desayuno")
           .map((item) => {
@@ -39,7 +39,7 @@ export default function MenuGeneral() {
               />
             );
           })}
-      </div>
+      </section>
       <h2 className={menugeneral.title}>Almuerzo</h2>
       <section className={menugeneral.containerMenu}>
         {dataProducts

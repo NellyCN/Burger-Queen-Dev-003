@@ -8,10 +8,6 @@ import Almuerzo from '../styles/almuerzo.module.css'
 // "image":
 // "type":
 // "dateEntry":
-function hello() {
-  // console.log("Click yo");
-}
-
 
 export default function MenuAlmuerzo(props) {
   return (
@@ -20,9 +16,11 @@ export default function MenuAlmuerzo(props) {
       {/* <div className={Almuerzo.divproducto} onClick={hello}>        </div> */}
       <div className={Almuerzo.containerproducto}>
         {/* <Image src={props.imageProd} className={Almuerzo.imageProd} alt='imagen producto de comida' /> */}
-        <img src={props.imageProd} className={Almuerzo.imageProd} alt='imagen producto de comida' />
-        <p>{props.name}</p>
-        <p>{props.price}</p>
+        <div className={Almuerzo.etiqProd}>
+          <img src={props.imageProd} className={Almuerzo.imageProd} alt='imagen producto de comida' />
+          <p>{props.name}</p>
+          <p>{props.price}</p>
+        </div>
         <button className={Almuerzo.btnagregarproducto}>Agregar producto</button>
       </div>
     </div>

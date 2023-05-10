@@ -1,20 +1,14 @@
 .containerMenu {
-    width: 21rem;
-    height: 21rem;
-
+    width: 100%;
+    height: auto;
     background-color: rgb(250, 250, 250);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     border-style: outset;
-    /*  borde de 1px de ancho y color negro */
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
-    margin: 10px 0px 0px 10px;
-    /* superior e izquierdo*/
-    align-items: center;
-    overflow: auto;
-    /* para no desbordar el contenedor */
-    justify-content: space-between;
+    margin: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow: auto;     /* para no desbordar el contenedor */
+    flex-direction: row;
 }
 
 .title {
@@ -28,7 +22,7 @@
 }
 
 .titlecontainer {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* display: flex; */
 }

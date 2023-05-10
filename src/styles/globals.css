@@ -96,7 +96,8 @@ a {
 
 .body1Container{
   flex-direction: column;
-  width: max-content;
+  width: 50%;
+  margin-left: 8px;
 }
 
 /* @media (prefers-color-scheme: dark) {

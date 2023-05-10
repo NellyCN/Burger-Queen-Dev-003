@@ -4,11 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import OrderByProduct from "./orderByProduct";
 import MessageButtons from "./buttonOrder";
-// import { useContext } from "react";
-// import { PropTypes } from "prop";
-// import TotalContext '../';
+import TotalPedido from "@/styles/totales";
 
-export default function TakeOrders() {
+export default function TakeOrders(prop) {
   const [dataOrders, setdataOrders] = useState([]);
 
   let arrayOrders = []; //
@@ -24,15 +22,15 @@ export default function TakeOrders() {
     quantityProduct: 1,
     subTotalProduct: 1000.0,
   };
-  arrayOrders.push(obj1,obj2);
+  arrayOrders.push(obj1, obj2);
   useEffect(() => {
-  setdataOrders(arrayOrders);
-}, []);
+    setdataOrders(arrayOrders);
+  }, []);
 
   return (
     <>
-      <div className={TakeOrder.containerOrders}>
-        <div className={TakeOrder.containerOrdersHeader}>
+      <main key={prop.id} className={TakeOrder.containerOrders}>
+        <section className={TakeOrder.containerOrdersHeader}>
           <label htmlFor="mesero" className={TakeOrder.optMesero}>
             Mesero:
           </label>
@@ -56,57 +54,42 @@ export default function TakeOrders() {
             placeholder="Ingresa nombre del cliente"
           />
           <p>Hora Pedido:</p>
-        </div>
+        </section>
         <div className={TakeOrder.lineResumeOrders}></div>
-        <div className={TakeOrder.containerDetailOrders}>
-          <p>Precio</p> <p>Cantidad</p> <p>Total</p>
-        </div>
-        {/* <div className={TakeOrder.detailProductscontainer}>
-            <p className={TakeOrder.nameProduct}>sandwich</p>
-            <p className={TakeOrder.subTotalProduct}>1000</p>
-            <p className={TakeOrder.quantityProduct}>2</p>
-            <p className={TakeOrder.subTotalProduct}>2000</p>
-            <Image className={TakeOrder.imageTrash} alt="trash image" src={require('src/images/trash2.png')} />
-        </div>
-        <div className={TakeOrder.detailProductscontainer}>
-            <p className={TakeOrder.nameProduct}>te</p>
-            <p className={TakeOrder.subTotalProduct}>500</p>
-            <p className={TakeOrder.quantityProduct}>3</p>
-            <p className={TakeOrder.subTotalProduct}>1500</p>
-            <Image className={TakeOrder.imageTrash} alt="trash image" src={require('src/images/trash2.png')} />
-        </div> */}
-        {
-          dataOrders.map(item => {
-            console.log(item);
+        <section className={TakeOrder.containerDetailOrders}>
+          <p>Producto</p>
+          <p>Precio</p> <p>Cantidad</p> <p>Sub-Total</p>
+          <p>Eliminar</p>
+        </section>
+        {dataOrders.map((item) => {
+          console.log(item);
 
-            return (
-              <OrderByProduct
-                key={item.id}
-                name={item.name}
-                price={item.price}
-                quantityProduct={item.quantityProduct}
-                subTotalProduct={item.subTotalProduct}
-              />
-            );
-          })
-        }
-
-
+          return (
+            <OrderByProduct
+              key={item.id}
+              name={item.name}
+              price={item.price}
+              quantityProduct={item.quantityProduct}
+              subTotalProduct={item.subTotalProduct}
+            />
+          );
+        })}
         <div className={TakeOrder.lineResumeOrders}></div>
-        <div className={TakeOrder.resumeOrders}>
+        <section className={TakeOrder.resumeOrders}>
           <div className={TakeOrder.labelResumeOrders}>
             <p>Sub-Total </p>
             <p>IGV</p>
             <p>Total Pedido</p>
           </div>
-          <div className={TakeOrder.dataLabelResumeOrders}>
+          <TotalPedido />
+          {/* <div className={TakeOrder.dataLabelResumeOrders}>
             <p>$ 0.00</p>
             <p>$ 0.00</p>
             <p className={TakeOrder.totalprice}>$ 0,000.00</p>
-          </div>
-        </div>
-        <MessageButtons/>
-      </div>
+          </div> */}
+        </section>
+        <MessageButtons />
+      </main>
     </>
   );
 }
